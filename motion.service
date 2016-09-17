@@ -1,0 +1,10 @@
+[Unit]
+Requires=local-fs.target
+After=local-fs.target
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /home/pi/bin/start_motion.sh
+
+[Install]
+WantedBy=default.target
