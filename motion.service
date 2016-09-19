@@ -3,7 +3,7 @@ Requires=local-fs.target
 After=local-fs.target
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/bin/bash /home/pi/bin/start_motion.sh
 
 [Install]
